@@ -1,0 +1,9 @@
+# ninja log v5
+1	290	6837884942053986	build.ninja	b2cb69b6f8157455
+6	464	6837883695108569	CMakeFiles/El_eterno_dilema_del_lector.dir/main.cpp.obj	f328788307e7aa83
+2	478	6837883695258573	CMakeFiles/El_eterno_dilema_del_lector.dir/menu_y_validaciones.cpp.obj	180672f0600e2698
+5	422	6837886789938481	CMakeFiles/El_eterno_dilema_del_lector.dir/main.cpp.obj	f328788307e7aa83
+9	424	6837886789968465	CMakeFiles/El_eterno_dilema_del_lector.dir/funciones_programa.cpp.obj	a9bb37a46bdad606
+425	547	6837886791168555	El_eterno_dilema_del_lector.exe	171c6a332458cd02
+4	376	6837899703783647	CMakeFiles/El_eterno_dilema_del_lector.dir/menu_y_validaciones.cpp.obj	180672f0600e2698
+377	502	6837899705013741	El_eterno_dilema_del_lector.exe	171c6a332458cd02
