@@ -1,6 +1,25 @@
 
 #ifndef EL_ETERNO_DILEMA_DEL_LECTOR_UTIL_H
 #define EL_ETERNO_DILEMA_DEL_LECTOR_UTIL_H
+#include <string>
+
+using namespace std;
+
+//structs
+struct Libro{
+    string titulo;
+    string genero;
+    int puntaje;
+
+};
+
+struct Biblioteca{
+    Libro** libros;
+    int cantidad_de_libros;
+};
+
+
+
 //constantes de valores del menu
 const int ERROR = -1;
 const int VALOR_MINIMO_ACEPTADO = 1;
