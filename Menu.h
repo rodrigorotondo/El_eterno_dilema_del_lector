@@ -1,23 +1,6 @@
 
-#ifndef EL_ETERNO_DILEMA_DEL_LECTOR_UTIL_H
-#define EL_ETERNO_DILEMA_DEL_LECTOR_UTIL_H
-#include <string>
-
-using namespace std;
-
-//structs
-struct Libro{
-    string titulo;
-    string genero;
-    int puntaje;
-
-};
-
-struct Biblioteca{
-    Libro** libros;
-    int cantidad_de_libros;
-};
-
+#ifndef EL_ETERNO_DILEMA_DEL_LECTOR_MENU_H
+#define EL_ETERNO_DILEMA_DEL_LECTOR_MENU_H
 
 
 //constantes de valores del menu
@@ -53,4 +36,4 @@ void mostrar_genero_mas_leido();
 void mostrar_genero_favorito();
 void guardar_y_salir(bool &seguir);
 
-#endif //EL_ETERNO_DILEMA_DEL_LECTOR_UTIL_H
+#endif //EL_ETERNO_DILEMA_DEL_LECTOR_MENU_H

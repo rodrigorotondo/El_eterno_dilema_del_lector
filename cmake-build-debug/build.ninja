@@ -51,19 +51,25 @@ build cmake_object_order_depends_target_El_eterno_dilema_del_lector: phony || CM
 
 build CMakeFiles/El_eterno_dilema_del_lector.dir/main.cpp.obj: CXX_COMPILER__El_eterno_dilema_del_lector_Debug D$:/facultad/algo$ 2/TPS/El_eterno_dilema_del_lector/main.cpp || cmake_object_order_depends_target_El_eterno_dilema_del_lector
   DEP_FILE = CMakeFiles\El_eterno_dilema_del_lector.dir\main.cpp.obj.d
-  FLAGS = -Wall -Wconversion -Werror -g -std=gnu++14
+  FLAGS = -Wall -Werror -g -std=gnu++14
   OBJECT_DIR = CMakeFiles\El_eterno_dilema_del_lector.dir
   OBJECT_FILE_DIR = CMakeFiles\El_eterno_dilema_del_lector.dir
 
-build CMakeFiles/El_eterno_dilema_del_lector.dir/util.cpp.obj: CXX_COMPILER__El_eterno_dilema_del_lector_Debug D$:/facultad/algo$ 2/TPS/El_eterno_dilema_del_lector/util.cpp || cmake_object_order_depends_target_El_eterno_dilema_del_lector
-  DEP_FILE = CMakeFiles\El_eterno_dilema_del_lector.dir\util.cpp.obj.d
-  FLAGS = -Wall -Wconversion -Werror -g -std=gnu++14
+build CMakeFiles/El_eterno_dilema_del_lector.dir/Menu.cpp.obj: CXX_COMPILER__El_eterno_dilema_del_lector_Debug D$:/facultad/algo$ 2/TPS/El_eterno_dilema_del_lector/Menu.cpp || cmake_object_order_depends_target_El_eterno_dilema_del_lector
+  DEP_FILE = CMakeFiles\El_eterno_dilema_del_lector.dir\Menu.cpp.obj.d
+  FLAGS = -Wall -Werror -g -std=gnu++14
   OBJECT_DIR = CMakeFiles\El_eterno_dilema_del_lector.dir
   OBJECT_FILE_DIR = CMakeFiles\El_eterno_dilema_del_lector.dir
 
 build CMakeFiles/El_eterno_dilema_del_lector.dir/manejo_de_archivos.cpp.obj: CXX_COMPILER__El_eterno_dilema_del_lector_Debug D$:/facultad/algo$ 2/TPS/El_eterno_dilema_del_lector/manejo_de_archivos.cpp || cmake_object_order_depends_target_El_eterno_dilema_del_lector
   DEP_FILE = CMakeFiles\El_eterno_dilema_del_lector.dir\manejo_de_archivos.cpp.obj.d
-  FLAGS = -Wall -Wconversion -Werror -g -std=gnu++14
+  FLAGS = -Wall -Werror -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\El_eterno_dilema_del_lector.dir
+  OBJECT_FILE_DIR = CMakeFiles\El_eterno_dilema_del_lector.dir
+
+build CMakeFiles/El_eterno_dilema_del_lector.dir/Estructuras_y_Punteros.cpp.obj: CXX_COMPILER__El_eterno_dilema_del_lector_Debug D$:/facultad/algo$ 2/TPS/El_eterno_dilema_del_lector/Estructuras$ y$ Punteros.cpp || cmake_object_order_depends_target_El_eterno_dilema_del_lector
+  DEP_FILE = CMakeFiles\El_eterno_dilema_del_lector.dir\Estructuras_y_Punteros.cpp.obj.d
+  FLAGS = -Wall -Werror -g -std=gnu++14
   OBJECT_DIR = CMakeFiles\El_eterno_dilema_del_lector.dir
   OBJECT_FILE_DIR = CMakeFiles\El_eterno_dilema_del_lector.dir
 
@@ -75,8 +81,8 @@ build CMakeFiles/El_eterno_dilema_del_lector.dir/manejo_de_archivos.cpp.obj: CXX
 #############################################
 # Link the executable El_eterno_dilema_del_lector.exe
 
-build El_eterno_dilema_del_lector.exe: CXX_EXECUTABLE_LINKER__El_eterno_dilema_del_lector_Debug CMakeFiles/El_eterno_dilema_del_lector.dir/main.cpp.obj CMakeFiles/El_eterno_dilema_del_lector.dir/util.cpp.obj CMakeFiles/El_eterno_dilema_del_lector.dir/manejo_de_archivos.cpp.obj
-  FLAGS = -Wall -Wconversion -Werror -g
+build El_eterno_dilema_del_lector.exe: CXX_EXECUTABLE_LINKER__El_eterno_dilema_del_lector_Debug CMakeFiles/El_eterno_dilema_del_lector.dir/main.cpp.obj CMakeFiles/El_eterno_dilema_del_lector.dir/Menu.cpp.obj CMakeFiles/El_eterno_dilema_del_lector.dir/manejo_de_archivos.cpp.obj CMakeFiles/El_eterno_dilema_del_lector.dir/Estructuras_y_Punteros.cpp.obj
+  FLAGS = -Wall -Werror -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\El_eterno_dilema_del_lector.dir
   POST_BUILD = cd .

@@ -1,5 +1,22 @@
 # ninja log v5
-1	290	6838724041847290	build.ninja	b2cb69b6f8157455
+1	290	6843732513464283	build.ninja	b2cb69b6f8157455
 3	426	6838407441817703	CMakeFiles/El_eterno_dilema_del_lector.dir/main.cpp.obj	f328788307e7aa83
 1515	2735	6838462381286244	El_eterno_dilema_del_lector.exe	c1996776e066fd8d
 4	1515	6838462369083694	CMakeFiles/El_eterno_dilema_del_lector.dir/util.cpp.obj	2ff8e7dc5b914512
+9	976	6843764074985068	CMakeFiles/El_eterno_dilema_del_lector.dir/manejo_de_archivos.cpp.obj	8f6f5affec02d7aa
+13	991	6843764075135034	CMakeFiles/El_eterno_dilema_del_lector.dir/Menu.cpp.obj	8f5ed3f710c74f11
+16	1021	6843764075445043	CMakeFiles/El_eterno_dilema_del_lector.dir/Estructuras_y_Punteros.cpp.obj	94390c8af65f7411
+4	1048	6843764075715107	CMakeFiles/El_eterno_dilema_del_lector.dir/main.cpp.obj	94bd038605e906d
+8	490	6843766158896009	CMakeFiles/El_eterno_dilema_del_lector.dir/manejo_de_archivos.cpp.obj	8f6f5affec02d7aa
+4	500	6843766158986001	CMakeFiles/El_eterno_dilema_del_lector.dir/Menu.cpp.obj	8f5ed3f710c74f11
+500	658	6843766160546104	El_eterno_dilema_del_lector.exe	273e8507a0b59f82
+4	509	6843770185966368	CMakeFiles/El_eterno_dilema_del_lector.dir/main.cpp.obj	94bd038605e906d
+8	566	6843770186526437	CMakeFiles/El_eterno_dilema_del_lector.dir/Menu.cpp.obj	8f5ed3f710c74f11
+12	580	6843770186676428	CMakeFiles/El_eterno_dilema_del_lector.dir/Estructuras_y_Punteros.cpp.obj	94390c8af65f7411
+580	870	6843770189551020	El_eterno_dilema_del_lector.exe	273e8507a0b59f82
+4	520	6843770326355478	CMakeFiles/El_eterno_dilema_del_lector.dir/Estructuras_y_Punteros.cpp.obj	94390c8af65f7411
+521	695	6843770328065601	El_eterno_dilema_del_lector.exe	273e8507a0b59f82
+3	392	6843781682090337	CMakeFiles/El_eterno_dilema_del_lector.dir/main.cpp.obj	94bd038605e906d
+7	448	6843781682640378	CMakeFiles/El_eterno_dilema_del_lector.dir/Menu.cpp.obj	8f5ed3f710c74f11
+10	466	6843781682820403	CMakeFiles/El_eterno_dilema_del_lector.dir/Estructuras_y_Punteros.cpp.obj	94390c8af65f7411
+466	741	6843781685539490	El_eterno_dilema_del_lector.exe	273e8507a0b59f82
