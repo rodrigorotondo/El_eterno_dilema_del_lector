@@ -57,7 +57,7 @@ void imprimir_libros(Biblioteca *biblioteca){
 }
 
 void eliminar_punteros(Biblioteca *biblioteca){
-    for(int i = 0; i<biblioteca->indice_del_proximo_libro-1;i++){
+    for(int i = 0; i<biblioteca->indice_del_proximo_libro;i++){
         delete biblioteca->libros[i];
     }
     delete [] biblioteca->libros;
