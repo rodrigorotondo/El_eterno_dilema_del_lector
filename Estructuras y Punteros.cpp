@@ -17,7 +17,7 @@ void agrandar_biblioteca(Biblioteca *biblioteca){
     int nuevo_tamanio = biblioteca->cantidad_maxima_de_libros*2;
     Libro ** biblioteca_agrandada = new Libro *[nuevo_tamanio];
 
-    for(int i = 0; i<=biblioteca->indice_del_proximo_libro; i++){
+    for(int i = 0; i<=biblioteca->indice_del_proximo_libro-1; i++){
         biblioteca_agrandada[i] = biblioteca->libros[i];
     }
 

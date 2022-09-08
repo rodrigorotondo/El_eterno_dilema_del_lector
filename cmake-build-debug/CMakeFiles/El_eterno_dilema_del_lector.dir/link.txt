@@ -1,0 +1,3 @@
+"D:\Archivos de programas\CLion 2022.2.1\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\El_eterno_dilema_del_lector.dir/objects.a
+"D:\Archivos de programas\CLion 2022.2.1\bin\mingw\bin\ar.exe" qc CMakeFiles\El_eterno_dilema_del_lector.dir/objects.a @CMakeFiles\El_eterno_dilema_del_lector.dir\objects1.rsp
+"D:\Archivos de programas\CLion 2022.2.1\bin\mingw\bin\g++.exe" -Wall -Werror -g -Wl,--whole-archive CMakeFiles\El_eterno_dilema_del_lector.dir/objects.a -Wl,--no-whole-archive -o El_eterno_dilema_del_lector.exe -Wl,--out-implib,libEl_eterno_dilema_del_lector.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\El_eterno_dilema_del_lector.dir\linklibs.rsp
