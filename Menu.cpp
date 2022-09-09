@@ -34,6 +34,32 @@ void es_opcion_valida(int opcion_elegida , bool &opcion_valida){
         cout<<"La opcion elegida es invalida, ingrese una opcion entre los valores 1 - 8"<<endl;
     }
 }
+using namespace std;
+
+void listar_libros(){
+    cout<<"a";
+}
+void agregar_libro(){
+    cout<<"a";
+}
+void editar_puntaje(){
+    cout<<"a";
+}
+void mostrar_libro_favorito(){
+    cout<<"a";
+}
+void mostrar_libros_con_menor_puntaje(){
+    cout<<"a";
+}
+void mostrar_genero_mas_leido(){
+    cout<<"a";
+}
+void mostrar_genero_favorito(){
+    cout<<"a";
+}
+void guardar_y_salir(bool &seguir){
+    cout<<"a";
+}
 
 void procesar_opcion_elegida(int opcion_elegida, bool &seguir){
 

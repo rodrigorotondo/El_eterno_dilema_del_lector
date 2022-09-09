@@ -56,7 +56,7 @@ void imprimir_libros(Biblioteca *biblioteca){
     }
 }
 
-void eliminar_punteros(Biblioteca *biblioteca){
+void liberar_memoria_dinamica(Biblioteca *biblioteca){
     for(int i = 0; i<biblioteca->indice_del_proximo_libro;i++){
         delete biblioteca->libros[i];
     }

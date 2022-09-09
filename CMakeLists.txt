@@ -4,4 +4,4 @@ project(El_eterno_dilema_del_lector)
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_FLAGS "-Wall -Werror" )
 
-add_executable(El_eterno_dilema_del_lector main.cpp Menu.cpp Menu.h manejo_de_archivos.cpp "Estructuras y Punteros.cpp" "Estructuras y Punteros.h")
+add_executable(El_eterno_dilema_del_lector main.cpp Menu.cpp Menu.h manejo_de_archivos.cpp "Estructuras y Punteros.cpp" "Estructuras y Punteros.h" manejo_de_archivos.h)

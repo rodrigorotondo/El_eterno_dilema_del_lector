@@ -33,7 +33,7 @@ void inicializar_biblioteca( Biblioteca *biblioteca , int cantidad_maxima_de_lib
 
 void agrandar_biblioteca(Biblioteca *biblioteca);
 
-void eliminar_punteros(Biblioteca *biblioteca);
+void liberar_memoria_dinamica(Biblioteca *biblioteca);
 
 
 #endif //EL_ETERNO_DILEMA_DEL_LECTOR_ESTRUCTURAS_Y_PUNTEROS_H
