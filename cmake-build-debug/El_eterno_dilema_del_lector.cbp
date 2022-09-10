@@ -8,102 +8,102 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="D:/facultad/algo 2/TPS/El_eterno_dilema_del_lector/cmake-build-debug"/>
+				<Option working_dir="/home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="D:/Archivos de programas/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/facultad/algo 2/TPS/El_eterno_dilema_del_lector/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="D:/Archivos de programas/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/facultad/algo 2/TPS/El_eterno_dilema_del_lector/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Archivos de programas/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/facultad/algo 2/TPS/El_eterno_dilema_del_lector/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Archivos de programas/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/facultad/algo 2/TPS/El_eterno_dilema_del_lector/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="El_eterno_dilema_del_lector">
-				<Option output="D:/facultad/algo 2/TPS/El_eterno_dilema_del_lector/cmake-build-debug/El_eterno_dilema_del_lector.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/facultad/algo 2/TPS/El_eterno_dilema_del_lector/cmake-build-debug"/>
+				<Option output="/home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/cmake-build-debug/El_eterno_dilema_del_lector" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="D:/Archivos de programas/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
-					<Add directory="D:/Archivos de programas/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="D:/Archivos de programas/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
-					<Add directory="D:/Archivos de programas/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
-					<Add directory="D:/Archivos de programas/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
-					<Add directory="D:/Archivos de programas/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
-					<Add directory="D:/Archivos de programas/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="/usr/include/c++/10"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/10"/>
+					<Add directory="/usr/include/c++/10/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="D:/Archivos de programas/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/facultad/algo 2/TPS/El_eterno_dilema_del_lector/cmake-build-debug/Makefile&quot;  VERBOSE=1 El_eterno_dilema_del_lector"/>
-					<CompileFile command="D:/Archivos de programas/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/facultad/algo 2/TPS/El_eterno_dilema_del_lector/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Archivos de programas/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/facultad/algo 2/TPS/El_eterno_dilema_del_lector/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Archivos de programas/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/facultad/algo 2/TPS/El_eterno_dilema_del_lector/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/cmake-build-debug/Makefile&quot;  VERBOSE=1 El_eterno_dilema_del_lector"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="El_eterno_dilema_del_lector/fast">
-				<Option output="D:/facultad/algo 2/TPS/El_eterno_dilema_del_lector/cmake-build-debug/El_eterno_dilema_del_lector.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/facultad/algo 2/TPS/El_eterno_dilema_del_lector/cmake-build-debug"/>
+				<Option output="/home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/cmake-build-debug/El_eterno_dilema_del_lector" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="D:/Archivos de programas/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
-					<Add directory="D:/Archivos de programas/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="D:/Archivos de programas/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
-					<Add directory="D:/Archivos de programas/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
-					<Add directory="D:/Archivos de programas/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
-					<Add directory="D:/Archivos de programas/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
-					<Add directory="D:/Archivos de programas/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="/usr/include/c++/10"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/10"/>
+					<Add directory="/usr/include/c++/10/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="D:/Archivos de programas/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/facultad/algo 2/TPS/El_eterno_dilema_del_lector/cmake-build-debug/Makefile&quot;  VERBOSE=1 El_eterno_dilema_del_lector/fast"/>
-					<CompileFile command="D:/Archivos de programas/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/facultad/algo 2/TPS/El_eterno_dilema_del_lector/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Archivos de programas/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/facultad/algo 2/TPS/El_eterno_dilema_del_lector/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Archivos de programas/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/facultad/algo 2/TPS/El_eterno_dilema_del_lector/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/cmake-build-debug/Makefile&quot;  VERBOSE=1 El_eterno_dilema_del_lector/fast"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="D:/facultad/algo 2/TPS/El_eterno_dilema_del_lector/cmake-build-debug"/>
+				<Option working_dir="/home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="D:/Archivos de programas/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/facultad/algo 2/TPS/El_eterno_dilema_del_lector/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="D:/Archivos de programas/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/facultad/algo 2/TPS/El_eterno_dilema_del_lector/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Archivos de programas/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/facultad/algo 2/TPS/El_eterno_dilema_del_lector/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Archivos de programas/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/facultad/algo 2/TPS/El_eterno_dilema_del_lector/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="D:/facultad/algo 2/TPS/El_eterno_dilema_del_lector/cmake-build-debug"/>
+				<Option working_dir="/home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="D:/Archivos de programas/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/facultad/algo 2/TPS/El_eterno_dilema_del_lector/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="D:/Archivos de programas/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/facultad/algo 2/TPS/El_eterno_dilema_del_lector/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Archivos de programas/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/facultad/algo 2/TPS/El_eterno_dilema_del_lector/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Archivos de programas/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/facultad/algo 2/TPS/El_eterno_dilema_del_lector/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="D:/facultad/algo 2/TPS/El_eterno_dilema_del_lector/Estructuras y Punteros.cpp">
+		<Unit filename="/home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/Estructuras y Punteros.cpp">
 			<Option target="El_eterno_dilema_del_lector"/>
 		</Unit>
-		<Unit filename="D:/facultad/algo 2/TPS/El_eterno_dilema_del_lector/Estructuras y Punteros.h">
+		<Unit filename="/home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/Estructuras y Punteros.h">
 			<Option target="El_eterno_dilema_del_lector"/>
 		</Unit>
-		<Unit filename="D:/facultad/algo 2/TPS/El_eterno_dilema_del_lector/Menu.cpp">
+		<Unit filename="/home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/Manejo_de_archivos.cpp">
 			<Option target="El_eterno_dilema_del_lector"/>
 		</Unit>
-		<Unit filename="D:/facultad/algo 2/TPS/El_eterno_dilema_del_lector/Menu.h">
+		<Unit filename="/home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/Manejo_de_archivos.h">
 			<Option target="El_eterno_dilema_del_lector"/>
 		</Unit>
-		<Unit filename="D:/facultad/algo 2/TPS/El_eterno_dilema_del_lector/main.cpp">
+		<Unit filename="/home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/Menu.cpp">
 			<Option target="El_eterno_dilema_del_lector"/>
 		</Unit>
-		<Unit filename="D:/facultad/algo 2/TPS/El_eterno_dilema_del_lector/manejo_de_archivos.cpp">
+		<Unit filename="/home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/Menu.h">
 			<Option target="El_eterno_dilema_del_lector"/>
 		</Unit>
-		<Unit filename="D:/facultad/algo 2/TPS/El_eterno_dilema_del_lector/manejo_de_archivos.h">
+		<Unit filename="/home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/main.cpp">
 			<Option target="El_eterno_dilema_del_lector"/>
 		</Unit>
-		<Unit filename="D:/facultad/algo 2/TPS/El_eterno_dilema_del_lector/CMakeLists.txt">
+		<Unit filename="/home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

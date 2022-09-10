@@ -1,9 +1,13 @@
 
 #ifndef EL_ETERNO_DILEMA_DEL_LECTOR_MENU_H
 #define EL_ETERNO_DILEMA_DEL_LECTOR_MENU_H
+#include <string>
 
+using namespace std;
 
-//constantes de valores del menu
+//constantes
+const int CANTIDAD_MAXIMA_DE_LIBROS_INICIAL = 10;
+
 const int ERROR = -1;
 const int VALOR_MINIMO_ACEPTADO = 1;
 const int VALOR_MAXIMO_ACEPTADO = 8;
@@ -17,7 +21,7 @@ const int MOSTRAR_GENERO_MAS_LEIDO = 6;
 const int MOSTRAR_GENERO_FAVORITO = 7;
 const int GUARDAR_Y_SALIR = 8;
 
-
+const string PATH = "libros.csv";
 
 //funciones para el funcionamiento del menu
 void mostrar_menu();

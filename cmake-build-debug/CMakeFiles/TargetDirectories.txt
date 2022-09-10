@@ -1,3 +1,3 @@
-D:/facultad/algo 2/TPS/El_eterno_dilema_del_lector/cmake-build-debug/CMakeFiles/El_eterno_dilema_del_lector.dir
-D:/facultad/algo 2/TPS/El_eterno_dilema_del_lector/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/facultad/algo 2/TPS/El_eterno_dilema_del_lector/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/cmake-build-debug/CMakeFiles/El_eterno_dilema_del_lector.dir
+/home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/cmake-build-debug/CMakeFiles/rebuild_cache.dir

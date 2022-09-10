@@ -1,4 +1,4 @@
-"D:\Archivos de programas\CLion 2022.2.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" -S "D:\facultad\algo 2\TPS\El_eterno_dilema_del_lector" -B "D:\facultad\algo 2\TPS\El_eterno_dilema_del_lector\cmake-build-debug"
+/home/peace-buyer/Descargas/clion-2022.2.1/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" -S /home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector -B /home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/cmake-build-debug
 -- Configuring done
 -- Generating done
--- Build files have been written to: D:/facultad/algo 2/TPS/El_eterno_dilema_del_lector/cmake-build-debug
+-- Build files have been written to: /home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/cmake-build-debug

@@ -1,7 +1,14 @@
 #include "Menu.h"
 #include "Estructuras y Punteros.h"
+#include "Manejo_de_archivos.h"
 
 int main() {
+
+    Biblioteca *biblioteca = new Biblioteca;
+
+    inicializar_biblioteca(biblioteca,CANTIDAD_MAXIMA_DE_LIBROS_INICIAL);
+    llenar_biblioteca(biblioteca);
+
     int opcion_elegida;
 
     bool seguir = true;

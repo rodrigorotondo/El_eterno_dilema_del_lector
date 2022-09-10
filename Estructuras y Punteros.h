@@ -9,7 +9,7 @@ using namespace std;
 //structs
 struct Libro{
     string titulo;
-    char genero;
+    string genero;
     int puntaje;
 
 };
@@ -22,7 +22,7 @@ struct Biblioteca{
 };
 
 //funciones de Libro:
-Libro* crear_libro(string titulo, char genero, int puntaje);
+Libro* crear_libro(string titulo, string genero, int puntaje);
 
 void agregar_libro(Libro *libro, Biblioteca *biblioteca);
 

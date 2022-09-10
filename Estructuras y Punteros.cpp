@@ -29,7 +29,7 @@ void agrandar_biblioteca(Biblioteca *biblioteca){
 }
 
 //funciones de Libro
-Libro* crear_libro(string titulo, char genero, int puntaje){
+Libro* crear_libro(string titulo, string genero, int puntaje){
     Libro *libro = new Libro;
     libro->titulo = titulo;
     libro->genero = genero;
