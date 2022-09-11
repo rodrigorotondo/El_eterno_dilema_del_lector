@@ -7,7 +7,7 @@
 
 using namespace std;
 
-void llenar_biblioteca(Biblioteca *biblioteca){
+void llenar_biblioteca(Biblioteca &biblioteca){
     stringstream linea_stringstream;
     string linea_archivo;
     string titulo;
@@ -26,9 +26,9 @@ void llenar_biblioteca(Biblioteca *biblioteca){
 
     while(getline(archivo_libros,linea_archivo)){
         linea_stringstream << linea_archivo;
-        while (getline(linea_stringstream,titulo)){
-            getline(linea_stringstream,genero);
-            getline(linea_stringstream,puntaje_sin_convertir);
+        while (getline(linea_stringstream,titulo,',')){
+            getline(linea_stringstream,genero,',');
+            getline(linea_stringstream,puntaje_sin_convertir,',');
             puntaje = stoi(puntaje_sin_convertir);
             agregar_libro(crear_libro(titulo,genero,puntaje),biblioteca);
         }

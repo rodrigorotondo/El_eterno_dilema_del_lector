@@ -1,10 +1,11 @@
 #include "Menu.h"
-#include "Estructuras y Punteros.h"
 #include "Manejo_de_archivos.h"
+
+
 
 int main() {
 
-    Biblioteca *biblioteca = new Biblioteca;
+    Biblioteca biblioteca{};
 
     inicializar_biblioteca(biblioteca,CANTIDAD_MAXIMA_DE_LIBROS_INICIAL);
     llenar_biblioteca(biblioteca);
@@ -19,7 +20,8 @@ int main() {
         while (!opcion_valida) {
             obtener_opcion(opcion_elegida);
             es_opcion_valida(opcion_elegida, opcion_valida);
-            procesar_opcion_elegida(opcion_elegida,seguir);
+            procesar_opcion_elegida(biblioteca,opcion_elegida,seguir);
+
         }
     }
 

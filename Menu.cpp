@@ -1,6 +1,7 @@
 #include "Menu.h"
-#include "Estructuras y Punteros.h"
+#include "Manejo_de_archivos.h"
 #include <iostream>
+
 using namespace std;
 
 void mostrar_menu(){
@@ -36,8 +37,11 @@ void es_opcion_valida(int opcion_elegida , bool &opcion_valida){
 }
 using namespace std;
 
-void listar_libros(){
-    cout<<"a";
+void listar_libros(Biblioteca biblioteca){
+
+    for(int i = 0;i<biblioteca.indice_del_proximo_libro;i++){
+        cout<<"titulo: "<<biblioteca.libros[i]->titulo<<" Genero: "<<biblioteca.libros[i]->genero<<" puntaje: "<<biblioteca.libros[i]->puntaje<<endl;
+    }
 }
 void agregar_libro(){
     cout<<"a";
@@ -57,50 +61,20 @@ void mostrar_genero_mas_leido(){
 void mostrar_genero_favorito(){
     cout<<"a";
 }
-void guardar_y_salir(bool &seguir){
-    cout<<"a";
+void guardar_y_salir(Biblioteca biblioteca, bool &seguir){
+    liberar_memoria_dinamica(biblioteca);
+    seguir = false;
 }
 
-void procesar_opcion_elegida(int opcion_elegida, bool &seguir){
-
-    switch(opcion_elegida){ // NOLINT(hicpp-multiway-paths-covered)
-
+void procesar_opcion_elegida(Biblioteca &biblioteca, int opcion_elegida , bool &seguir){
+    switch(opcion_elegida){
         case LISTAR_LIBROS:
-            listar_libros();
+            listar_libros(biblioteca);
             break;
-
-        case AGREGAR_LIBRO:
-            agregar_libro();
-            break;
-
-        case EDITAR_PUNTAJE:
-            editar_puntaje();
-            break;
-
-        case MOSTRAR_LIBRO_FAVORITO:
-            mostrar_libro_favorito();
-            break;
-
-        case MOSTRAR_LIBROS_CON_MENOR_PUNTAJE:
-            mostrar_libros_con_menor_puntaje();
-            break;
-
-        case MOSTRAR_GENERO_MAS_LEIDO:
-            mostrar_genero_mas_leido();
-            break;
-
-        case MOSTRAR_GENERO_FAVORITO:
-            mostrar_genero_favorito();
-            break;
-
         case GUARDAR_Y_SALIR:
-            guardar_y_salir(seguir);
-            break;
-
+            guardar_y_salir(biblioteca,seguir);
 
     }
-
-
 
 
 
