@@ -32,8 +32,9 @@ void procesar_opcion_elegida(Biblioteca &biblioteca,int opcion_elegida, bool &se
 
 
 //funciones fundamentales del programa
-/*void listar_libros(Biblioteca *biblioteca);
-void agregar_libro();
+void listar_libros(Biblioteca *biblioteca);
+void imprimir_genero(char genero);
+/*void agregar_libro();
 void editar_puntaje();
 void mostrar_libro_favorito();
 void mostrar_libros_con_menor_puntaje();

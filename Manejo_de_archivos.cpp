@@ -11,7 +11,8 @@ void llenar_biblioteca(Biblioteca &biblioteca){
     stringstream linea_stringstream;
     string linea_archivo;
     string titulo;
-    string genero;
+    string genero_sin_convertir;
+    char genero;
     string puntaje_sin_convertir;
     int puntaje;
 
@@ -27,7 +28,8 @@ void llenar_biblioteca(Biblioteca &biblioteca){
     while(getline(archivo_libros,linea_archivo)){
         linea_stringstream << linea_archivo;
         while (getline(linea_stringstream,titulo,',')){
-            getline(linea_stringstream,genero,',');
+            getline(linea_stringstream,genero_sin_convertir,',');
+            genero = genero_sin_convertir[0];
             getline(linea_stringstream,puntaje_sin_convertir,',');
             puntaje = stoi(puntaje_sin_convertir);
             agregar_libro(crear_libro(titulo,genero,puntaje),biblioteca);

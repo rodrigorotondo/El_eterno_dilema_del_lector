@@ -40,7 +40,43 @@ using namespace std;
 void listar_libros(Biblioteca biblioteca){
 
     for(int i = 0;i<biblioteca.indice_del_proximo_libro;i++){
-        cout<<"titulo: "<<biblioteca.libros[i]->titulo<<" Genero: "<<biblioteca.libros[i]->genero<<" puntaje: "<<biblioteca.libros[i]->puntaje<<endl;
+        cout<<"------------------------------------------------------------------------------------------------"<<endl;
+        cout<<"Titulo: "<<biblioteca.libros[i]->titulo<<endl;
+        imprimir_genero(biblioteca.libros[i]->genero);
+        cout<<"Puntaje: "<<biblioteca.libros[i]->puntaje<<endl;
+        cout<<"------------------------------------------------------------------------------------------------"<<endl;
+    }
+}
+
+void imprimir_genero(char genero){
+    switch(genero){
+        case 'A':
+            cout<<"Genero: Aventura"<<endl;
+            break;
+
+        case 'C':
+            cout<<"Genero: Ciencia ficcion"<<endl;
+            break;
+
+        case 'D':
+            cout<<"Genero: Didactica"<<endl;
+            break;
+
+        case 'P':
+            cout<<"Genero: Policiaca"<<endl;
+            break;
+
+        case 'R':
+            cout<<"Genero: Romance"<<endl;
+            break;
+
+        case 'T':
+            cout<<"Genero: Terror"<<endl;
+            break;
+
+        default:
+            cout<<"El genero que aparece en el archivo es desconocido"<<endl;
+
     }
 }
 void agregar_libro(){
