@@ -2,6 +2,7 @@ CMakeFiles/El_eterno_dilema_del_lector.dir/Manejo_de_archivos.cpp.o: \
  /home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/Manejo_de_archivos.cpp \
  /usr/include/stdc-predef.h \
  /home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/Menu.h \
+ /home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/Validaciones.h \
  /usr/include/c++/10/string \
  /usr/include/x86_64-linux-gnu/c++/10/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/10/bits/os_defines.h \
@@ -129,6 +130,7 @@ CMakeFiles/El_eterno_dilema_del_lector.dir/Manejo_de_archivos.cpp.o: \
  /usr/include/c++/10/bits/charconv.h \
  /usr/include/c++/10/bits/functional_hash.h \
  /usr/include/c++/10/bits/basic_string.tcc \
+ /home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/Constantes.h \
  /home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/Estructuras\ y\ Punteros.h \
  /home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/Manejo_de_archivos.h \
  /usr/include/c++/10/iostream /usr/include/c++/10/ostream \

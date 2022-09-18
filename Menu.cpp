@@ -1,6 +1,8 @@
 #include "Menu.h"
 #include "Manejo_de_archivos.h"
+#include "Validaciones.h"
 #include <iostream>
+#include "Constantes.h"
 
 using namespace std;
 
@@ -16,25 +18,9 @@ void mostrar_menu(){
     <<"8) Guardar y salir"<<endl;
 }
 
-void obtener_opcion(int &opcion_elegida){
 
-    cout<<"Por favor, elija una opcion: ";
-    cin>>opcion_elegida;
-    if(cin.fail()){ //cin.fail() detecta que el tipo ingresado concuerde con el valor en donde se almacena
-        cin.clear(); //cin.clear() "limpia" el error producido en el caso de que se ingrese un tipo incorrecto
-        cin.sync(); //cin.sync() "borra" los caracteres leidos por cin y deja la variable en 0
-        opcion_elegida = ERROR;
-    }
-}
 
-void es_opcion_valida(int opcion_elegida , bool &opcion_valida){
-    if(opcion_elegida <= VALOR_MAXIMO_ACEPTADO && opcion_elegida >= VALOR_MINIMO_ACEPTADO){
-        opcion_valida = true;
-    }
-    else{
-        cout<<"La opcion elegida es invalida, ingrese una opcion entre los valores 1 - 8"<<endl;
-    }
-}
+
 using namespace std;
 
 void listar_libros(Biblioteca biblioteca){
@@ -75,12 +61,42 @@ void imprimir_genero(char genero){
             break;
 
         default:
-            cout<<"El genero que aparece en el archivo es desconocido"<<endl;
+            cout<<"El genero es desconocido"<<endl;
 
     }
 }
-void agregar_libro(){
-    cout<<"a";
+void agregar_libro(Biblioteca &biblioteca){
+    string titulo;
+    char genero;
+    int puntaje;
+
+    cout<<"Ingrese el Titulo del libro: "<<endl;
+    getline(cin>>ws,titulo);
+    if(!es_titulo_valido(titulo)){
+        reingresar_titulo(titulo);
+    }
+
+    obtener_genero(genero);
+    if(!es_genero_valido(genero)){
+        reingresar_genero(genero);
+    }
+
+
+    cout<<"Ingrese el puntaje: ";
+    obtener_valor(puntaje);
+    if(!es_rango_valido(puntaje,PUNTAJE_MINIMO,PUNTAJE_MAXIMO)){
+        reingresar_puntaje(puntaje);
+    }
+
+    agregar_libro(crear_libro(titulo,genero,puntaje), biblioteca);
+}
+void imprimir_lista_generos(){
+    cout<<AVENTURA<<") Aventura"<<endl;
+    cout<<CIENCIA_FICCION<<") Ciencia ficcion"<<endl;
+    cout<<DIDACTICA<<") Didactica"<<endl;
+    cout<<POLICIACA<<") Policiaca"<<endl;
+    cout<<ROMANCE<<") Romance"<<endl;
+    cout<<TERROR<<") Terror"<<endl<<endl;
 }
 void editar_puntaje(){
     cout<<"a";
@@ -107,8 +123,12 @@ void procesar_opcion_elegida(Biblioteca &biblioteca, int opcion_elegida , bool &
         case LISTAR_LIBROS:
             listar_libros(biblioteca);
             break;
+        case AGREGAR_LIBRO:
+            agregar_libro(biblioteca);
+            break;
         case GUARDAR_Y_SALIR:
             guardar_y_salir(biblioteca,seguir);
+            break;
 
     }
 

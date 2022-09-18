@@ -82,6 +82,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/Constantes.h">
+			<Option target="El_eterno_dilema_del_lector"/>
+		</Unit>
 		<Unit filename="/home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/Estructuras y Punteros.cpp">
 			<Option target="El_eterno_dilema_del_lector"/>
 		</Unit>
@@ -98,6 +101,12 @@
 			<Option target="El_eterno_dilema_del_lector"/>
 		</Unit>
 		<Unit filename="/home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/Menu.h">
+			<Option target="El_eterno_dilema_del_lector"/>
+		</Unit>
+		<Unit filename="/home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/Validaciones.cpp">
+			<Option target="El_eterno_dilema_del_lector"/>
+		</Unit>
+		<Unit filename="/home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/Validaciones.h">
 			<Option target="El_eterno_dilema_del_lector"/>
 		</Unit>
 		<Unit filename="/home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/main.cpp">

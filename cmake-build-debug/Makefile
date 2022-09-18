@@ -201,6 +201,30 @@ Menu.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/El_eterno_dilema_del_lector.dir/build.make CMakeFiles/El_eterno_dilema_del_lector.dir/Menu.cpp.s
 .PHONY : Menu.cpp.s
 
+Validaciones.o: Validaciones.cpp.o
+.PHONY : Validaciones.o
+
+# target to build an object file
+Validaciones.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/El_eterno_dilema_del_lector.dir/build.make CMakeFiles/El_eterno_dilema_del_lector.dir/Validaciones.cpp.o
+.PHONY : Validaciones.cpp.o
+
+Validaciones.i: Validaciones.cpp.i
+.PHONY : Validaciones.i
+
+# target to preprocess a source file
+Validaciones.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/El_eterno_dilema_del_lector.dir/build.make CMakeFiles/El_eterno_dilema_del_lector.dir/Validaciones.cpp.i
+.PHONY : Validaciones.cpp.i
+
+Validaciones.s: Validaciones.cpp.s
+.PHONY : Validaciones.s
+
+# target to generate assembly for a file
+Validaciones.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/El_eterno_dilema_del_lector.dir/build.make CMakeFiles/El_eterno_dilema_del_lector.dir/Validaciones.cpp.s
+.PHONY : Validaciones.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -243,6 +267,9 @@ help:
 	@echo "... Menu.o"
 	@echo "... Menu.i"
 	@echo "... Menu.s"
+	@echo "... Validaciones.o"
+	@echo "... Validaciones.i"
+	@echo "... Validaciones.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

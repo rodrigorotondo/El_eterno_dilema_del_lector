@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/Estructuras y Punteros.cpp" "CMakeFiles/El_eterno_dilema_del_lector.dir/Estructuras_y_Punteros.cpp.o" "gcc" "CMakeFiles/El_eterno_dilema_del_lector.dir/Estructuras_y_Punteros.cpp.o.d"
   "/home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/Manejo_de_archivos.cpp" "CMakeFiles/El_eterno_dilema_del_lector.dir/Manejo_de_archivos.cpp.o" "gcc" "CMakeFiles/El_eterno_dilema_del_lector.dir/Manejo_de_archivos.cpp.o.d"
   "/home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/Menu.cpp" "CMakeFiles/El_eterno_dilema_del_lector.dir/Menu.cpp.o" "gcc" "CMakeFiles/El_eterno_dilema_del_lector.dir/Menu.cpp.o.d"
+  "/home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/Validaciones.cpp" "CMakeFiles/El_eterno_dilema_del_lector.dir/Validaciones.cpp.o" "gcc" "CMakeFiles/El_eterno_dilema_del_lector.dir/Validaciones.cpp.o.d"
   "/home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/main.cpp" "CMakeFiles/El_eterno_dilema_del_lector.dir/main.cpp.o" "gcc" "CMakeFiles/El_eterno_dilema_del_lector.dir/main.cpp.o.d"
   )
 

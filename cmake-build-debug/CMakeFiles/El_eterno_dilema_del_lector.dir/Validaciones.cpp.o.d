@@ -1,7 +1,6 @@
-CMakeFiles/El_eterno_dilema_del_lector.dir/Menu.cpp.o: \
- /home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/Menu.cpp \
+CMakeFiles/El_eterno_dilema_del_lector.dir/Validaciones.cpp.o: \
+ /home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/Validaciones.cpp \
  /usr/include/stdc-predef.h \
- /home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/Menu.h \
  /home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/Validaciones.h \
  /usr/include/c++/10/string \
  /usr/include/x86_64-linux-gnu/c++/10/bits/c++config.h \
@@ -131,8 +130,6 @@ CMakeFiles/El_eterno_dilema_del_lector.dir/Menu.cpp.o: \
  /usr/include/c++/10/bits/functional_hash.h \
  /usr/include/c++/10/bits/basic_string.tcc \
  /home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/Constantes.h \
- /home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/Estructuras\ y\ Punteros.h \
- /home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/Manejo_de_archivos.h \
  /usr/include/c++/10/iostream /usr/include/c++/10/ostream \
  /usr/include/c++/10/ios /usr/include/c++/10/bits/ios_base.h \
  /usr/include/c++/10/bits/locale_classes.h \
@@ -150,4 +147,6 @@ CMakeFiles/El_eterno_dilema_del_lector.dir/Menu.cpp.o: \
  /usr/include/c++/10/bits/locale_facets.tcc \
  /usr/include/c++/10/bits/basic_ios.tcc \
  /usr/include/c++/10/bits/ostream.tcc /usr/include/c++/10/istream \
- /usr/include/c++/10/bits/istream.tcc
+ /usr/include/c++/10/bits/istream.tcc /usr/include/c++/10/limits \
+ /home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/Menu.h \
+ /home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/Estructuras\ y\ Punteros.h

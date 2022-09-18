@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/El_eterno_dilema_del_lector.dir/Manejo_de_archivos.cpp.o.d"
   "CMakeFiles/El_eterno_dilema_del_lector.dir/Menu.cpp.o"
   "CMakeFiles/El_eterno_dilema_del_lector.dir/Menu.cpp.o.d"
+  "CMakeFiles/El_eterno_dilema_del_lector.dir/Validaciones.cpp.o"
+  "CMakeFiles/El_eterno_dilema_del_lector.dir/Validaciones.cpp.o.d"
   "CMakeFiles/El_eterno_dilema_del_lector.dir/main.cpp.o"
   "CMakeFiles/El_eterno_dilema_del_lector.dir/main.cpp.o.d"
   "El_eterno_dilema_del_lector"
