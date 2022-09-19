@@ -1,4 +1,4 @@
-#include "Estructuras y Punteros.h"
+#include "Estructuras_y_Punteros.h"
 #include <string>
 
 

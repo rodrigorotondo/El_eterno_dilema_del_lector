@@ -112,18 +112,18 @@ CMakeFiles/El_eterno_dilema_del_lector.dir/Manejo_de_archivos.cpp.s: cmake_force
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/Manejo_de_archivos.cpp -o CMakeFiles/El_eterno_dilema_del_lector.dir/Manejo_de_archivos.cpp.s
 
 CMakeFiles/El_eterno_dilema_del_lector.dir/Estructuras_y_Punteros.cpp.o: CMakeFiles/El_eterno_dilema_del_lector.dir/flags.make
-CMakeFiles/El_eterno_dilema_del_lector.dir/Estructuras_y_Punteros.cpp.o: ../Estructuras\ y\ Punteros.cpp
+CMakeFiles/El_eterno_dilema_del_lector.dir/Estructuras_y_Punteros.cpp.o: ../Estructuras_y_Punteros.cpp
 CMakeFiles/El_eterno_dilema_del_lector.dir/Estructuras_y_Punteros.cpp.o: CMakeFiles/El_eterno_dilema_del_lector.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/El_eterno_dilema_del_lector.dir/Estructuras_y_Punteros.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/El_eterno_dilema_del_lector.dir/Estructuras_y_Punteros.cpp.o -MF CMakeFiles/El_eterno_dilema_del_lector.dir/Estructuras_y_Punteros.cpp.o.d -o CMakeFiles/El_eterno_dilema_del_lector.dir/Estructuras_y_Punteros.cpp.o -c "/home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/Estructuras y Punteros.cpp"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/El_eterno_dilema_del_lector.dir/Estructuras_y_Punteros.cpp.o -MF CMakeFiles/El_eterno_dilema_del_lector.dir/Estructuras_y_Punteros.cpp.o.d -o CMakeFiles/El_eterno_dilema_del_lector.dir/Estructuras_y_Punteros.cpp.o -c /home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/Estructuras_y_Punteros.cpp
 
 CMakeFiles/El_eterno_dilema_del_lector.dir/Estructuras_y_Punteros.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/El_eterno_dilema_del_lector.dir/Estructuras_y_Punteros.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/Estructuras y Punteros.cpp" > CMakeFiles/El_eterno_dilema_del_lector.dir/Estructuras_y_Punteros.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/Estructuras_y_Punteros.cpp > CMakeFiles/El_eterno_dilema_del_lector.dir/Estructuras_y_Punteros.cpp.i
 
 CMakeFiles/El_eterno_dilema_del_lector.dir/Estructuras_y_Punteros.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/El_eterno_dilema_del_lector.dir/Estructuras_y_Punteros.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/Estructuras y Punteros.cpp" -o CMakeFiles/El_eterno_dilema_del_lector.dir/Estructuras_y_Punteros.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/Estructuras_y_Punteros.cpp -o CMakeFiles/El_eterno_dilema_del_lector.dir/Estructuras_y_Punteros.cpp.s
 
 CMakeFiles/El_eterno_dilema_del_lector.dir/Validaciones.cpp.o: CMakeFiles/El_eterno_dilema_del_lector.dir/flags.make
 CMakeFiles/El_eterno_dilema_del_lector.dir/Validaciones.cpp.o: ../Validaciones.cpp

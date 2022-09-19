@@ -1,7 +1,7 @@
 CMakeFiles/El_eterno_dilema_del_lector.dir/Estructuras_y_Punteros.cpp.o: \
- /home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/Estructuras\ y\ Punteros.cpp \
+ /home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/Estructuras_y_Punteros.cpp \
  /usr/include/stdc-predef.h \
- /home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/Estructuras\ y\ Punteros.h \
+ /home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/Estructuras_y_Punteros.h \
  /usr/include/c++/10/string \
  /usr/include/x86_64-linux-gnu/c++/10/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/10/bits/os_defines.h \

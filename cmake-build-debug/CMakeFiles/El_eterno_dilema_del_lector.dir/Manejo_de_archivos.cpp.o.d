@@ -130,8 +130,8 @@ CMakeFiles/El_eterno_dilema_del_lector.dir/Manejo_de_archivos.cpp.o: \
  /usr/include/c++/10/bits/charconv.h \
  /usr/include/c++/10/bits/functional_hash.h \
  /usr/include/c++/10/bits/basic_string.tcc \
+ /home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/Estructuras_y_Punteros.h \
  /home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/Constantes.h \
- /home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/Estructuras\ y\ Punteros.h \
  /home/peace-buyer/Facultad/algo_2/El_eterno_dilema_del_lector/Manejo_de_archivos.h \
  /usr/include/c++/10/iostream /usr/include/c++/10/ostream \
  /usr/include/c++/10/ios /usr/include/c++/10/bits/ios_base.h \

@@ -1,10 +1,10 @@
 #include "Validaciones.h"
 #include "Constantes.h"
 #include <iostream>
-#include <limits>
+
 #include "Menu.h"
 
-using namespace std;
+
 
 void obtener_valor(int &valor_elegido){
 
@@ -31,6 +31,14 @@ bool es_rango_valido(int valor_elegido, int valor_minimo, int valor_maximo){
     return opcion_valida;
 }
 
+void obtener_titulo(string &titulo){
+    cout<<"Ingrese el Titulo del libro: "<<endl;
+    getline(cin>>ws,titulo);
+    if(!es_titulo_valido(titulo)){
+        reingresar_titulo(titulo);
+    }
+
+}
 
 bool es_titulo_valido(string titulo){
     int i = 0;
@@ -42,6 +50,32 @@ bool es_titulo_valido(string titulo){
         i++;
     }
     return titulo_valido;
+}
+
+bool existe_libro(string titulo, Biblioteca biblioteca){
+    bool el_libro_existe = false;
+    int i = 0;
+    while(!el_libro_existe && i!=biblioteca.indice_del_proximo_libro){
+        if(titulo == biblioteca.libros[i]->titulo){
+            el_libro_existe = true;
+        }
+        i++;
+    }
+    return el_libro_existe;
+}
+
+bool existe_libro_plus(string titulo, Biblioteca biblioteca, int &indice_del_libro){
+    bool el_libro_existe = false;
+    int i = 0;
+    while(!el_libro_existe && i!=biblioteca.indice_del_proximo_libro){
+        if(titulo == biblioteca.libros[i]->titulo){
+            el_libro_existe = true;
+            indice_del_libro = i;
+        }
+        i++;
+    }
+    return el_libro_existe;
+
 }
 
 void reingresar_titulo(string &titulo) {
@@ -58,11 +92,15 @@ void obtener_genero(char &genero){
     //el genero se obtiene utilizando getline debido a que si se utiliza cin, suele entrar en un loop infinito
     //dificil de solucionar
     string entrada_genero;
-    cout<<"Ingrese un genero de la lista (solo se tomara la primer letra): ";
+    cout<<"Ingrese un genero de la lista (solo se tomara la primer letra): "<<endl;
     imprimir_lista_generos();
     getline(cin>>ws,entrada_genero);
     genero =entrada_genero[0];
     genero = toupper(genero);
+
+    if(!es_genero_valido(genero)){
+        reingresar_genero(genero);
+    }
 }
 
 bool es_genero_valido(char genero){

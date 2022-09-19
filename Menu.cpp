@@ -6,8 +6,13 @@
 
 using namespace std;
 
+void imprimir_linea_separadora(){
+    cout<<"------------------------------------------------------------------------------------------------"<<endl;
+}
+
 void mostrar_menu(){
-    cout<<"Menu:"<<endl<<endl<<endl
+    imprimir_linea_separadora();
+    cout<<"Menu:"<<endl<<endl
     <<"1) Listar libros leidos"<<endl
     <<"2) Agregar libro"<<endl
     <<"3) Editar puntaje de un libro por titulo"<<endl
@@ -16,21 +21,20 @@ void mostrar_menu(){
     <<"6) Mostrar genero mas leido"<<endl
     <<"7) Mostrar genero favorito"<<endl
     <<"8) Guardar y salir"<<endl;
+    imprimir_linea_separadora();
 }
 
 
 
 
-using namespace std;
-
 void listar_libros(Biblioteca biblioteca){
 
     for(int i = 0;i<biblioteca.indice_del_proximo_libro;i++){
-        cout<<"------------------------------------------------------------------------------------------------"<<endl;
+        imprimir_linea_separadora();
         cout<<"Titulo: "<<biblioteca.libros[i]->titulo<<endl;
         imprimir_genero(biblioteca.libros[i]->genero);
         cout<<"Puntaje: "<<biblioteca.libros[i]->puntaje<<endl;
-        cout<<"------------------------------------------------------------------------------------------------"<<endl;
+        imprimir_linea_separadora();
     }
 }
 
@@ -65,41 +69,66 @@ void imprimir_genero(char genero){
 
     }
 }
+
+
+
+
+
+
 void agregar_libro(Biblioteca &biblioteca){
     string titulo;
     char genero;
     int puntaje;
 
-    cout<<"Ingrese el Titulo del libro: "<<endl;
-    getline(cin>>ws,titulo);
-    if(!es_titulo_valido(titulo)){
-        reingresar_titulo(titulo);
+    obtener_titulo(titulo);
+    if(!existe_libro(titulo,biblioteca)){
+
+        obtener_genero(genero);
+
+        cout<<"Ingrese el puntaje: ";
+        obtener_valor(puntaje);
+        if(!es_rango_valido(puntaje,PUNTAJE_MINIMO,PUNTAJE_MAXIMO)){
+            reingresar_puntaje(puntaje);
+        }
+
+        agregar_libro(crear_libro(titulo,genero,puntaje), biblioteca);
     }
-
-    obtener_genero(genero);
-    if(!es_genero_valido(genero)){
-        reingresar_genero(genero);
+    else{
+        cout<<"El libro ya existe y no puede ser agregado nuevamente."<<endl;
     }
-
-
-    cout<<"Ingrese el puntaje: ";
-    obtener_valor(puntaje);
-    if(!es_rango_valido(puntaje,PUNTAJE_MINIMO,PUNTAJE_MAXIMO)){
-        reingresar_puntaje(puntaje);
-    }
-
-    agregar_libro(crear_libro(titulo,genero,puntaje), biblioteca);
 }
+
 void imprimir_lista_generos(){
+    imprimir_linea_separadora();
     cout<<AVENTURA<<") Aventura"<<endl;
     cout<<CIENCIA_FICCION<<") Ciencia ficcion"<<endl;
     cout<<DIDACTICA<<") Didactica"<<endl;
     cout<<POLICIACA<<") Policiaca"<<endl;
     cout<<ROMANCE<<") Romance"<<endl;
-    cout<<TERROR<<") Terror"<<endl<<endl;
+    cout<<TERROR<<") Terror"<<endl;
+    imprimir_linea_separadora();
 }
-void editar_puntaje(){
-    cout<<"a";
+
+
+
+
+
+
+void editar_puntaje(Biblioteca &biblioteca){
+    string titulo;
+    int indice_del_libro_a_editar;
+    int nuevo_puntaje;
+    cout<<"Por favor, ingrese el titulo del libro cuyo puntaje va a editar:"<<endl;
+    obtener_titulo(titulo);
+
+    if(existe_libro_plus(titulo, biblioteca, indice_del_libro_a_editar)){
+        cout<<"Por favor, ingrese el nuevo puntaje: ";
+        obtener_valor(nuevo_puntaje);
+        if(!es_rango_valido(nuevo_puntaje,PUNTAJE_MINIMO,PUNTAJE_MAXIMO)){
+            reingresar_puntaje(nuevo_puntaje);
+        }
+        biblioteca.libros[indice_del_libro_a_editar]->puntaje = nuevo_puntaje;
+    }
 }
 void mostrar_libro_favorito(){
     cout<<"a";
@@ -123,9 +152,15 @@ void procesar_opcion_elegida(Biblioteca &biblioteca, int opcion_elegida , bool &
         case LISTAR_LIBROS:
             listar_libros(biblioteca);
             break;
+
+        case EDITAR_PUNTAJE:
+            editar_puntaje(biblioteca);
+            break;
+
         case AGREGAR_LIBRO:
             agregar_libro(biblioteca);
             break;
+
         case GUARDAR_Y_SALIR:
             guardar_y_salir(biblioteca,seguir);
             break;
