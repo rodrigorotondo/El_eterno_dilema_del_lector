@@ -81,7 +81,7 @@ void agregar_libro(Biblioteca &biblioteca){
     int puntaje;
 
     obtener_titulo(titulo);
-    if(!existe_libro(titulo,biblioteca)){
+    if(!buscar_libro(titulo,biblioteca)){
 
         obtener_genero(genero);
 
@@ -120,14 +120,18 @@ void editar_puntaje(Biblioteca &biblioteca){
     int nuevo_puntaje;
     cout<<"Por favor, ingrese el titulo del libro cuyo puntaje va a editar:"<<endl;
     obtener_titulo(titulo);
-
-    if(existe_libro_plus(titulo, biblioteca, indice_del_libro_a_editar)){
+    indice_del_libro_a_editar = buscar_libro(titulo,biblioteca);
+    if(indice_del_libro_a_editar != EL_LIBRO_NO_EXISTE){
         cout<<"Por favor, ingrese el nuevo puntaje: ";
         obtener_valor(nuevo_puntaje);
         if(!es_rango_valido(nuevo_puntaje,PUNTAJE_MINIMO,PUNTAJE_MAXIMO)){
             reingresar_puntaje(nuevo_puntaje);
         }
         biblioteca.libros[indice_del_libro_a_editar]->puntaje = nuevo_puntaje;
+    }
+    else{
+        cout<<"El titulo del libro ingresado no esta registrado"<<endl;
+        
     }
 }
 void mostrar_libro_favorito(){

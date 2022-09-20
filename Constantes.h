@@ -8,6 +8,7 @@ using namespace std;
 const int CANTIDAD_MAXIMA_DE_LIBROS_INICIAL = 10;
 
 const int ERROR = -1;
+const int EL_LIBRO_NO_EXISTE = -1;
 
 const int VALOR_MINIMO_ACEPTADO = 1;
 const int VALOR_MAXIMO_ACEPTADO = 8;

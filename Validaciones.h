@@ -12,8 +12,8 @@ bool es_titulo_valido(string titulo);
 void reingresar_titulo(string &titulo);
 
 //validacion de la existencia de un libro
-bool existe_libro(string titulo, Biblioteca biblioteca);
-bool existe_libro_plus(string titulo, Biblioteca biblioteca, int &indice_del_libro);
+int buscar_libro(string titulo, Biblioteca biblioteca);
+
 
 //validaciones del genero
 void obtener_genero(char &genero);

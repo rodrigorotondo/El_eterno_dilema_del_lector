@@ -52,30 +52,16 @@ bool es_titulo_valido(string titulo){
     return titulo_valido;
 }
 
-bool existe_libro(string titulo, Biblioteca biblioteca){
-    bool el_libro_existe = false;
+int buscar_libro(string titulo, Biblioteca biblioteca){
+    int indice_del_libro = EL_LIBRO_NO_EXISTE;
     int i = 0;
-    while(!el_libro_existe && i!=biblioteca.indice_del_proximo_libro){
+    while(indice_del_libro == EL_LIBRO_NO_EXISTE && i != biblioteca.indice_del_proximo_libro){
         if(titulo == biblioteca.libros[i]->titulo){
-            el_libro_existe = true;
-        }
-        i++;
-    }
-    return el_libro_existe;
-}
-
-bool existe_libro_plus(string titulo, Biblioteca biblioteca, int &indice_del_libro){
-    bool el_libro_existe = false;
-    int i = 0;
-    while(!el_libro_existe && i!=biblioteca.indice_del_proximo_libro){
-        if(titulo == biblioteca.libros[i]->titulo){
-            el_libro_existe = true;
             indice_del_libro = i;
         }
         i++;
     }
-    return el_libro_existe;
-
+    return indice_del_libro;
 }
 
 void reingresar_titulo(string &titulo) {
