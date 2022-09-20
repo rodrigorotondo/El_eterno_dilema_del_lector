@@ -47,7 +47,21 @@ void agregar_libro(Libro *libro, Biblioteca &biblioteca){
 
 
 }
+//funciones libros favoritos
+void reemplazar_libros_favoritos_con_menor_puntaje(Biblioteca biblioteca, Biblioteca &libros_favoritos, int indice){
+    delete [] libros_favoritos.libros;
+    inicializar_biblioteca(libros_favoritos, 1);
+    agregar_libro_favorito(biblioteca,libros_favoritos,indice);
 
+}
+void agregar_libro_favorito(Biblioteca biblioteca , Biblioteca &libros_favoritos,int indice){
+    if(libros_favoritos.cantidad_maxima_de_libros == libros_favoritos.indice_del_proximo_libro){
+        agrandar_biblioteca(libros_favoritos);
+    }
+    libros_favoritos.libros[libros_favoritos.indice_del_proximo_libro] = biblioteca.libros[indice];
+    libros_favoritos.indice_del_proximo_libro = libros_favoritos.indice_del_proximo_libro + 1;
+
+}
 
 
 void liberar_memoria_dinamica(Biblioteca &biblioteca){

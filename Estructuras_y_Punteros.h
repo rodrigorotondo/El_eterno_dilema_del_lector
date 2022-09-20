@@ -34,5 +34,9 @@ void agrandar_biblioteca(Biblioteca &biblioteca);
 
 void liberar_memoria_dinamica(Biblioteca &biblioteca);
 
+//funciones libros favoritos
+void reemplazar_libros_favoritos_con_menor_puntaje(Biblioteca biblioteca, Biblioteca &libros_favoritos, int indice);
+void agregar_libro_favorito(Biblioteca biblioteca , Biblioteca &libros_favoritos,int indice);
+
 
 #endif //EL_ETERNO_DILEMA_DEL_LECTOR_ESTRUCTURAS_Y_PUNTEROS_H

@@ -81,7 +81,7 @@ void agregar_libro(Biblioteca &biblioteca){
     int puntaje;
 
     obtener_titulo(titulo);
-    if(!buscar_libro(titulo,biblioteca)){
+    if(buscar_libro(titulo,biblioteca) == EL_LIBRO_NO_EXISTE){
 
         obtener_genero(genero);
 
@@ -131,11 +131,54 @@ void editar_puntaje(Biblioteca &biblioteca){
     }
     else{
         cout<<"El titulo del libro ingresado no esta registrado"<<endl;
-        
+
     }
 }
-void mostrar_libro_favorito(){
-    cout<<"a";
+
+
+
+
+void mostrar_libro_favorito(Biblioteca biblioteca){
+    Biblioteca libros_favoritos{};
+    inicializar_biblioteca(libros_favoritos,1);
+    libros_favoritos.libros[0] = biblioteca.libros[0];
+    cargar_libros_favoritos(biblioteca, libros_favoritos);
+    imprimir_linea_separadora();
+    if(libros_favoritos.indice_del_proximo_libro != 0) {
+        if (libros_favoritos.indice_del_proximo_libro == 1) {
+            cout << "El libro con mayor puntaje es: " << libros_favoritos.libros[0]->titulo << " ";
+            imprimir_genero(libros_favoritos.libros[0]->genero);
+
+
+        } else {
+            cout << "Los libros con mayor puntaje son: " << endl;
+            for (int i = 0; i <= libros_favoritos.indice_del_proximo_libro-1; i++) {
+                cout << libros_favoritos.libros[i]->titulo << " ";
+                imprimir_genero(libros_favoritos.libros[i]->genero);
+            }
+
+        }
+        cout << "Con un puntaje de: "<<libros_favoritos.libros[0]->puntaje<<endl;
+    }
+    else{
+        cout<<"No se registraron libros"<<endl;
+    }
+    delete [] libros_favoritos.libros;
+    imprimir_linea_separadora();
+
+}
+
+void cargar_libros_favoritos(Biblioteca biblioteca, Biblioteca &libros_favoritos){
+    for(int i = 1; i<=biblioteca.indice_del_proximo_libro-1;i++){
+        if(biblioteca.libros[i]->puntaje > libros_favoritos.libros[0]->puntaje){
+            reemplazar_libros_favoritos_con_menor_puntaje(biblioteca , libros_favoritos , i);
+
+        }
+        else if(libros_favoritos.libros[0]->puntaje == biblioteca.libros[i]->puntaje){
+            agregar_libro_favorito(biblioteca,libros_favoritos,i);
+
+        }
+    }
 }
 void mostrar_libros_con_menor_puntaje(){
     cout<<"a";
@@ -163,6 +206,10 @@ void procesar_opcion_elegida(Biblioteca &biblioteca, int opcion_elegida , bool &
 
         case AGREGAR_LIBRO:
             agregar_libro(biblioteca);
+            break;
+
+        case MOSTRAR_LIBRO_FAVORITO:
+            mostrar_libro_favorito(biblioteca);
             break;
 
         case GUARDAR_Y_SALIR:

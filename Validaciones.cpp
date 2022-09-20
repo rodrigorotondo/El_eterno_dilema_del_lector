@@ -82,7 +82,7 @@ void obtener_genero(char &genero){
     imprimir_lista_generos();
     getline(cin>>ws,entrada_genero);
     genero =entrada_genero[0];
-    genero = toupper(genero);
+    genero = (char)toupper(genero);
 
     if(!es_genero_valido(genero)){
         reingresar_genero(genero);
