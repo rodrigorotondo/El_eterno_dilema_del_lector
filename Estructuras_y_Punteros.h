@@ -21,7 +21,8 @@ struct Biblioteca{
     int cantidad_maxima_de_libros;
 };
 
-struct Generos_mas_leidos{
+struct Generos{
+    //cantidad de libros de cada genero
     int aventura = 0;
     int ciencia_ficcion = 0;
     int didactica = 0;
@@ -29,6 +30,15 @@ struct Generos_mas_leidos{
     int romance = 0;
     int terror = 0;
     int mayor_mayor_cantidad_de_libros_leidos;
+
+    //suma de puntajes de los libros de cada genero
+    int puntaje_aventura = 0;
+    int puntaje_ciencia_ficcion = 0;
+    int puntaje_didactica = 0;
+    int puntaje_policiaca = 0;
+    int puntaje_romance = 0;
+    int puntaje_terror = 0;
+    int promedio_mas_alto;
 
 };
 
