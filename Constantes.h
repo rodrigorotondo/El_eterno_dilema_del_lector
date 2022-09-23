@@ -13,16 +13,24 @@ const int EL_LIBRO_NO_EXISTE = -1;
 const int VALOR_MINIMO_ACEPTADO = 1;
 const int VALOR_MAXIMO_ACEPTADO = 8;
 
-const char AVENTURA = 'A';
-const char CIENCIA_FICCION = 'C';
-const char DIDACTICA = 'D';
-const char POLICIACA = 'P';
-const char ROMANCE = 'R';
-const char TERROR = 'T';
+const char GENERO_AVENTURA = 'A';
+const char GENERO_CIENCIA_FICCION = 'C';
+const char GENERO_DIDACTICA = 'D';
+const char GENERO_POLICIACA = 'P';
+const char GENERO_ROMANCE = 'R';
+const char GENERO_TERROR = 'T';
 const int CANTIDAD_DE_GENEROS = 6;
 const int PUNTAJE_MINIMO = 0;
 const int PUNTAJE_MAXIMO = 100;
 const char ERROR_GENERO = 'E';
+
+const int INDICE_AVENTURA = 0;
+const int INDICE_CIENCIA_FICCION = 1;
+const int INDICE_DIDACTICA = 2;
+const int INDICE_POLICIACA = 3;
+const int INDICE_ROMANCE = 4;
+const int INDICE_TERROR = 5;
+
 
 const int LISTAR_LIBROS = 1;
 const int AGREGAR_LIBRO = 2;

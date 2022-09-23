@@ -21,6 +21,17 @@ struct Biblioteca{
     int cantidad_maxima_de_libros;
 };
 
+struct Generos_mas_leidos{
+    int aventura = 0;
+    int ciencia_ficcion = 0;
+    int didactica = 0;
+    int policiaca = 0;
+    int romance = 0;
+    int terror = 0;
+    int mayor_mayor_cantidad_de_libros_leidos;
+
+};
+
 //funciones de Libro:
 Libro* crear_libro(string titulo, char genero, int puntaje);
 

@@ -13,6 +13,8 @@ void mostrar_menu();
 void imprimir_lista_generos();
 void procesar_opcion_elegida(Biblioteca &biblioteca,int opcion_elegida, bool &seguir);
 void cargar_libros_favoritos(Biblioteca biblioteca, Biblioteca &libros_favoritos);
+char convertir_indice_en_genero(int indice);
+
 
 //funciones fundamentales del programa
 void listar_libros(Biblioteca *biblioteca);

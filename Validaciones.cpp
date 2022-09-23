@@ -90,7 +90,7 @@ void obtener_genero(char &genero){
 }
 
 bool es_genero_valido(char genero){
-    char generos[] = {AVENTURA,CIENCIA_FICCION,DIDACTICA,POLICIACA,ROMANCE,TERROR};
+    char generos[] = {GENERO_AVENTURA, GENERO_CIENCIA_FICCION, GENERO_DIDACTICA, GENERO_POLICIACA, GENERO_ROMANCE, GENERO_TERROR};
     int i = 0;
     bool genero_valido = false;
     while(!genero_valido && i<CANTIDAD_DE_GENEROS){
