@@ -6,15 +6,21 @@
 
 
 
-void obtener_valor(int &valor_elegido){
-
-
-    cin >> valor_elegido;
+void obtener_valor(int &valor_elegido) {
+    string entrada;
+    try {
+    getline(cin >> ws, entrada);
+        valor_elegido = stoi(entrada);
+    }
+    catch(std::invalid_argument const&){
+        valor_elegido = ERROR;
+    }
+    /*cin >> valor_elegido;
     if(cin.fail()){ //cin.fail() detecta que el tipo ingresado concuerde con el valor en donde se almacena
         cin.clear(); //cin.clear() "limpia" el error producido en el caso de que se ingrese un tipo incorrecto
         cin.sync(); //cin.sync() "borra" los caracteres leidos por cin y deja la variable en 0
         valor_elegido = ERROR;
-    }
+    }*/
 }
 
 
@@ -119,7 +125,7 @@ void reingresar_puntaje(int &puntaje){
     bool puntaje_valido = false;
     while(!puntaje_valido) {
         cout << "Ingrese el puntaje: ";
-        cin >> puntaje;
+        obtener_valor(puntaje);
         puntaje_valido = es_rango_valido(puntaje,PUNTAJE_MINIMO,PUNTAJE_MAXIMO);
     }
 }

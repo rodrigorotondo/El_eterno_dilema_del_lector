@@ -16,6 +16,8 @@ void cargar_libros_favoritos(Biblioteca biblioteca, Biblioteca &libros_favoritos
 char convertir_indice_en_genero(int indice);
 void sumar_generos(Biblioteca biblioteca, Generos &generos, int indice);
 void sumar_puntajes(Biblioteca biblioteca, Generos &generos, int indice);
+int comparar_strings(string titulo_1, string titulo_2);
+double devolver_promedios(int suma_puntaje, int cantidad_libros);
 
 //funciones fundamentales del programa
 void listar_libros(Biblioteca *biblioteca);

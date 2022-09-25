@@ -42,3 +42,13 @@ void llenar_biblioteca(Biblioteca &biblioteca){
 
 
 }
+
+void escribir_biblioteca_en_csv(Biblioteca biblioteca){
+    ofstream archivo_libros(PATH,ios::out);
+    for(int i = 0; i < biblioteca.indice_del_proximo_libro; i++){
+        archivo_libros << biblioteca.libros[i]->titulo << ',' << biblioteca.libros[i]->genero << ','
+        << biblioteca.libros[i]->puntaje << "\n";
+    }
+
+    archivo_libros.close();
+}

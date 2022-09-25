@@ -29,7 +29,7 @@ struct Generos{
     int policiaca = 0;
     int romance = 0;
     int terror = 0;
-    int mayor_mayor_cantidad_de_libros_leidos;
+    int mayor_cantidad_de_libros_leidos;
 
     //suma de puntajes de los libros de cada genero
     int puntaje_aventura = 0;

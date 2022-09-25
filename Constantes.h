@@ -32,6 +32,12 @@ const int INDICE_ROMANCE = 4;
 const int INDICE_TERROR = 5;
 
 
+
+const int ALFABETICAMENTE_MENOR = -1;
+const int ALFABETICAMENTE_MAYOR = 1;
+const int ALFABETICAMENTE_IGUAL = 0;
+
+
 const int LISTAR_LIBROS = 1;
 const int AGREGAR_LIBRO = 2;
 const int EDITAR_PUNTAJE = 3;
