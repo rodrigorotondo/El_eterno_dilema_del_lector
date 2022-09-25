@@ -3,6 +3,7 @@
 #include "Validaciones.h"
 #include <iostream>
 #include "Constantes.h"
+#include <algorithm>
 
 
 using namespace std;
@@ -241,22 +242,21 @@ void mostrar_libros_con_menor_puntaje(Biblioteca biblioteca){
                     indice_tercer_libro = indice_segundo_libro;
                     indice_segundo_libro = indice_primer_libro;
                     indice_primer_libro = i;
-                } else if (comparar_strings(biblioteca.libros[i]->titulo,
+                } else if (biblioteca.libros[i]->puntaje != biblioteca.libros[indice_segundo_libro]->puntaje || comparar_strings(biblioteca.libros[i]->titulo,
                                             biblioteca.libros[indice_segundo_libro]->titulo) == ALFABETICAMENTE_MENOR) {
                     indice_tercer_libro = indice_segundo_libro;
                     indice_segundo_libro = i;
-                } else if (comparar_strings(biblioteca.libros[i]->titulo,
+                } else if (biblioteca.libros[i]->puntaje != biblioteca.libros[indice_tercer_libro]->puntaje || comparar_strings(biblioteca.libros[i]->titulo,
                                             biblioteca.libros[indice_tercer_libro]->titulo) == ALFABETICAMENTE_MENOR) {
                     indice_tercer_libro = i;
                 }
-            } else if ((biblioteca.libros[i]->puntaje <=
-                        biblioteca.libros[indice_segundo_libro]->puntaje)) {//&& (biblioteca.libros[i]->puntaje > biblioteca.libros[indice_tercer_libro]->puntaje)
+            } else if ((biblioteca.libros[i]->puntaje <= biblioteca.libros[indice_segundo_libro]->puntaje)) {
                 if (biblioteca.libros[i]->puntaje < biblioteca.libros[indice_segundo_libro]->puntaje ||
                     comparar_strings(biblioteca.libros[i]->titulo, biblioteca.libros[indice_segundo_libro]->titulo) ==
                     ALFABETICAMENTE_MENOR) {
                     indice_tercer_libro = indice_segundo_libro;
                     indice_segundo_libro = i;
-                } else if (comparar_strings(biblioteca.libros[i]->titulo,
+                } else if (biblioteca.libros[i]->puntaje != biblioteca.libros[indice_tercer_libro]->puntaje || comparar_strings(biblioteca.libros[i]->titulo,
                                             biblioteca.libros[indice_tercer_libro]->titulo) == ALFABETICAMENTE_MENOR) {
                     indice_tercer_libro = i;
                 }
@@ -266,6 +266,11 @@ void mostrar_libros_con_menor_puntaje(Biblioteca biblioteca){
                     ALFABETICAMENTE_MENOR) {
                     indice_tercer_libro = i;
                 }
+                else if(comparar_strings(biblioteca.libros[i]->titulo, biblioteca.libros[indice_tercer_libro]->titulo) ==
+                        ALFABETICAMENTE_MENOR){
+                    indice_tercer_libro = i;
+
+}
             }
 
 
@@ -294,6 +299,8 @@ void mostrar_libros_con_menor_puntaje(Biblioteca biblioteca){
 
 int comparar_strings(string titulo_1, string titulo_2){
     int orden_alfabetico;
+    std::transform(titulo_1.begin(), titulo_1.end(),titulo_1.begin(), ::toupper);
+    std::transform(titulo_2.begin(), titulo_2.end(),titulo_2.begin(), ::toupper);
     if(titulo_1.compare(titulo_2) < 0){
         orden_alfabetico = ALFABETICAMENTE_MENOR;
     }
