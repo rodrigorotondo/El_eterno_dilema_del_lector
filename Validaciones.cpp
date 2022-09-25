@@ -15,12 +15,7 @@ void obtener_valor(int &valor_elegido) {
     catch(std::invalid_argument const&){
         valor_elegido = ERROR;
     }
-    /*cin >> valor_elegido;
-    if(cin.fail()){ //cin.fail() detecta que el tipo ingresado concuerde con el valor en donde se almacena
-        cin.clear(); //cin.clear() "limpia" el error producido en el caso de que se ingrese un tipo incorrecto
-        cin.sync(); //cin.sync() "borra" los caracteres leidos por cin y deja la variable en 0
-        valor_elegido = ERROR;
-    }*/
+
 }
 
 
@@ -73,7 +68,7 @@ int buscar_libro(string titulo, Biblioteca biblioteca){
 void reingresar_titulo(string &titulo) {
     bool titulo_valido = false;
     while (!titulo_valido) {
-        cout << "El titulo ingeresado no es valido, por favor ingrese un titulo sin comas" << endl;
+        cout << "El titulo ingresado no es valido, por favor ingrese un titulo sin comas" << endl;
         getline(cin >> ws, titulo);
         titulo_valido = es_titulo_valido(titulo);
 

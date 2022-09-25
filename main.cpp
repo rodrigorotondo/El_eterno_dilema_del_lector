@@ -29,16 +29,5 @@ int main() {
         }
     }
 
-    /*Biblioteca *biblioteca = new Biblioteca;
-    inicializar_biblioteca(biblioteca,2);
-    agregar_libro(crear_libro("juan de la rodilla",'a',80),biblioteca);
-    agregar_libro(crear_libro("bovedas de acero",'p',90),biblioteca);
-    agregar_libro(crear_libro("el sabueso de los baskerville",'p',100),biblioteca);
-
-    imprimir_libros(biblioteca);
-    liberar_memoria_dinamica(biblioteca);*/
-
-
-
     return 0;
 }

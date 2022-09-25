@@ -30,12 +30,17 @@ void mostrar_menu(){
 
 
 void listar_libros(Biblioteca biblioteca){
-
-    for(int i = 0;i<biblioteca.indice_del_proximo_libro;i++){
-        imprimir_linea_separadora();
-        cout<<"Titulo: "<<biblioteca.libros[i]->titulo<<endl;
-        imprimir_genero(biblioteca.libros[i]->genero);
-        cout<<"Puntaje: "<<biblioteca.libros[i]->puntaje<<endl;
+    if(biblioteca.indice_del_proximo_libro !=0 ){
+        for (int i = 0; i < biblioteca.indice_del_proximo_libro; i++) {
+            imprimir_linea_separadora();
+            cout << "Titulo: " << biblioteca.libros[i]->titulo << endl;
+            imprimir_genero(biblioteca.libros[i]->genero);
+            cout << "Puntaje: " << biblioteca.libros[i]->puntaje << endl;
+            imprimir_linea_separadora();
+        }
+    }
+    else{
+        cout<< "No se registraron libros"<< endl;
         imprimir_linea_separadora();
     }
 }
@@ -158,8 +163,9 @@ void mostrar_libro_favorito(Biblioteca biblioteca) {
         } else {
             cout << "Los libros con mayor puntaje son: " << endl;
             for (int i = 0; i <= libros_favoritos.indice_del_proximo_libro-1; i++) {
-                cout << libros_favoritos.libros[i]->titulo << " ";
+                cout << libros_favoritos.libros[i]->titulo << " " << endl;
                 imprimir_genero(libros_favoritos.libros[i]->genero);
+                cout << endl;
             }
 
         }
@@ -323,14 +329,14 @@ void mostrar_genero_mas_leido(Biblioteca biblioteca){
     Generos generos {};
 
     for(int i = 0; i <biblioteca.indice_del_proximo_libro; i++){
-        sumar_generos(biblioteca, generos, i);
+        sumar_libros_por_genero(biblioteca, generos, i);
     }
-    int array_generos[] = {generos.aventura,
-                           generos.ciencia_ficcion,
-                           generos.didactica,
-                           generos.policiaca,
-                           generos.romance,
-                           generos.terror};
+    int array_generos[] = {generos.cantidad_libros_aventura,
+                           generos.cantidad_libros_ciencia_ficcion,
+                           generos.cantidad_libros_didactica,
+                           generos.cantidad_libros_policiaca,
+                           generos.cantidad_libros_romance,
+                           generos.cantidad_libros_terror};
     generos.mayor_cantidad_de_libros_leidos = array_generos[INDICE_AVENTURA];
     for(int i = 1; i<CANTIDAD_DE_GENEROS; i++){
         if(generos.mayor_cantidad_de_libros_leidos < array_generos[i]){
@@ -338,38 +344,43 @@ void mostrar_genero_mas_leido(Biblioteca biblioteca){
         }
     }
 
-    cout<<"Los generos mas leidos son: "<<endl;
+    if(generos.mayor_cantidad_de_libros_leidos != 0) {
+        cout << "Los generos mas leidos son: " << endl;
 
-    for(int i = 0; i<CANTIDAD_DE_GENEROS; i++){
-        if(array_generos[i] == generos.mayor_cantidad_de_libros_leidos){
-            imprimir_genero(convertir_indice_en_genero(i));
+        for (int i = 0; i < CANTIDAD_DE_GENEROS; i++) {
+            if (array_generos[i] == generos.mayor_cantidad_de_libros_leidos) {
+                imprimir_genero(convertir_indice_en_genero(i));
+            }
         }
+        cout << "Con " << generos.mayor_cantidad_de_libros_leidos << " libros leidos" << endl;
     }
-    cout << "Con " << generos.mayor_cantidad_de_libros_leidos << " libros leidos" <<endl;
+    else{
+        cout << "No se registraron libros"<<endl;
+    }
     imprimir_linea_separadora();
 
 
 }
 
-void sumar_generos(Biblioteca biblioteca, Generos &generos, int indice){
+void sumar_libros_por_genero(Biblioteca biblioteca, Generos &generos, int indice){
     switch(biblioteca.libros[indice]->genero){
         case GENERO_AVENTURA:
-            generos.aventura++;
+            generos.cantidad_libros_aventura++;
             break;
         case GENERO_CIENCIA_FICCION:
-            generos.ciencia_ficcion++;
+            generos.cantidad_libros_ciencia_ficcion++;
             break;
         case GENERO_DIDACTICA:
-            generos.didactica++;
+            generos.cantidad_libros_didactica++;
             break;
         case GENERO_POLICIACA:
-            generos.policiaca++;
+            generos.cantidad_libros_policiaca++;
             break;
         case GENERO_ROMANCE:
-            generos.romance++;
+            generos.cantidad_libros_romance++;
             break;
         case GENERO_TERROR:
-            generos.terror++;
+            generos.cantidad_libros_terror++;
             break;
     }
 }
@@ -402,16 +413,16 @@ void mostrar_genero_favorito(Biblioteca biblioteca){
     Generos generos {};
 
     for(int i = 0; i <biblioteca.indice_del_proximo_libro; i++){
-        sumar_generos(biblioteca, generos, i);
+        sumar_libros_por_genero(biblioteca, generos, i);
         sumar_puntajes(biblioteca,generos,i);
     }
 
-    double promedios_por_genero [] = {devolver_promedios(generos.puntaje_aventura, generos.aventura),
-                                     devolver_promedios(generos.puntaje_ciencia_ficcion, generos.ciencia_ficcion),
-                                     devolver_promedios(generos.puntaje_didactica, generos.didactica),
-                                     devolver_promedios(generos.puntaje_policiaca, generos.policiaca),
-                                      devolver_promedios(generos.puntaje_romance, generos.romance),
-                                      devolver_promedios(generos.puntaje_terror, generos.terror)};
+    double promedios_por_genero [] = {devolver_promedios(generos.puntaje_aventura, generos.cantidad_libros_aventura),
+                                     devolver_promedios(generos.puntaje_ciencia_ficcion, generos.cantidad_libros_ciencia_ficcion),
+                                     devolver_promedios(generos.puntaje_didactica, generos.cantidad_libros_didactica),
+                                     devolver_promedios(generos.puntaje_policiaca, generos.cantidad_libros_policiaca),
+                                      devolver_promedios(generos.puntaje_romance, generos.cantidad_libros_romance),
+                                      devolver_promedios(generos.puntaje_terror, generos.cantidad_libros_terror)};
 
     double promedio_mas_alto = promedios_por_genero[INDICE_AVENTURA];
 
@@ -422,13 +433,18 @@ void mostrar_genero_favorito(Biblioteca biblioteca){
         }
     }
 
-    cout<<"Generos favoritos: "<<endl;
-    for(int i = 0; i<CANTIDAD_DE_GENEROS; i++){
-        if(promedio_mas_alto == promedios_por_genero[i]){
-            imprimir_genero(convertir_indice_en_genero(i));
+    if(promedio_mas_alto !=0) {
+        cout << "Generos favoritos: " << endl;
+        for (int i = 0; i < CANTIDAD_DE_GENEROS; i++) {
+            if (promedio_mas_alto == promedios_por_genero[i]) {
+                imprimir_genero(convertir_indice_en_genero(i));
+            }
         }
+        cout << "con un promedio de: " << promedio_mas_alto << endl;
     }
-    cout<<"con un promedio de: " << promedio_mas_alto<<endl;
+    else{
+        cout << "No hay genero favorito" << endl;
+    }
     imprimir_linea_separadora();
 }
 double devolver_promedios(int suma_puntaje, int cantidad_libros){
